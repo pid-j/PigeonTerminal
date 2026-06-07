@@ -3,9 +3,12 @@
         "background": "#121212",
         "color": "#ffffff",
         "font-family": "'Noto Mono', monospace",
-        "font-size": "0.75em"
+        "font-size": "0.75em",
+        "fatal-color": "#ff0000",
+        "warning-color": "#ff9600",
+        "success-color": "#009600"
     },
-    "htm": "<meta charset='utf-8'><style>*{scrollbar-width:none}body{background:$BACKGROUND;width:100vw;height:100vh;padding:0;margin:0;overflow-y:scroll;overflow-x:clip}#terminal{color:$COLOR;font-size:$FONTSIZE;font-family:$FONTFAMILY;width:95vw;margin-left:2.5vw;margin-top:2.5vw;margin-bottom:2.5vw;display:block}</style><p id='terminal'></p><script>window.addEventListener('message', ev => {if (ev.data && ev.source === window.parent) {const data = JSON.parse(ev.data);if (data.type === 'TERMINAL_UPDATED') {document.querySelector('#terminal').innerHTML = atob(data.data)}}});</script>",
+    "htm": "<html><head><meta charset='utf-8'><style>*{scrollbar-width:none}fatal{color:$FATALCOLOR}warn,warning{color:$WARNINGCOLOR}succeed,success{color:$SUCCESSCOLOR}body{background:$BACKGROUND;width:100vw;height:100vh;padding:0;margin:0;overflow-y:scroll;overflow-x:clip}#terminal{scrollbar-width:none;color:$COLOR;font-size:$FONTSIZE;font-family:$FONTFAMILY;width:95vw;margin-left:2.5vw;margin-top:2.5vw;margin-bottom:2.5vw;display:block}</style></head><body><p id='terminal'></p><script>window.addEventListener('message',ev=>{if(ev.data&&ev.source===window.parent){const data=JSON.parse(ev.data);if(data.type==='TERMINAL_UPDATED'){document.querySelector('#terminal').innerHTML=atob(data.data)}}});</script></body></html>",
     "parser": {
         "arch": ["zip","PigeonScript"],
         "name":"ps",
