@@ -14,6 +14,6 @@
         "name":"ps",
         "broadcast":"pigeonscript:execute",
         "main":"main.ps",
-        "repo":"https://raw.githubusercontent.com/ThePigeonsBehindYou/PigeonScript/refs/heads/main/TerminalPS.sprite3"
+        "repo":"https://thepigeonsbehindyou.github.io/PigeonScript/TerminalPS.sprite3"
     }
 }
