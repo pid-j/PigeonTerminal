@@ -1,7 +1,5 @@
 # PigeonTerminal
 
-# **NOTE:** i didnt implement most of this, wait until release it
-
 ## What is PigeonTerminal?
 
 PigeonTerminal is a [TurboWarp](https://turbowarp.org)-based terminal operating system. It is the spiritual successor to [ChickenTerminal](https://github.com/pid-j/ChickenTerminal).
@@ -9,6 +7,8 @@ PigeonTerminal is a [TurboWarp](https://turbowarp.org)-based terminal operating 
 ## How do I use PigeonTerminal?
 
 PigeonTerminal is a terminal operating system, so it is recommended to know how to use a terminal. It is built for computer devices, so mobile users will have to wait until support is added.
+
+Please follow the setup after opening PigeonTerminal. You can open a preview at [this link](https://turbowarp.org/fullscreen?project_url=raw.githubusercontent.com/pid-j/PigeonTerminal/refs/heads/main/PigeonTerminal%20PB1.sb3).
 
 ### Setup
 
