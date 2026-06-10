@@ -10,9 +10,10 @@
     },
     "htm": "<html><head><meta charset='utf-8'><style>*{scrollbar-width:none}fatal{color:$FATALCOLOR}warn,warning{color:$WARNINGCOLOR}succeed,success{color:$SUCCESSCOLOR}body{background:$BACKGROUND;width:100vw;height:100vh;padding:0;margin:0;overflow-y:scroll;overflow-x:clip}#terminal{scrollbar-width:none;color:$COLOR;font-size:$FONTSIZE;font-family:$FONTFAMILY;width:95vw;margin-left:2.5vw;margin-top:2.5vw;margin-bottom:2.5vw;display:block}</style></head><body><p id='terminal'></p><script>window.addEventListener('message',ev=>{if(ev.data&&ev.source===window.parent&&ev.source!==window){const data=JSON.parse(ev.data);if(data.type==='TERMINAL_UPDATED'){document.querySelector('#terminal').innerHTML=data.data}else{window.parent.postMessage(ev.data,'*')}}});</script></body></html>",
     "parser": {
-        "arch": ["zip","PigeonScript"],
+        "arch":["zip","PigeonScript"],
         "name":"ps",
         "broadcast":"pigeonscript:execute",
-        "main":"main.ps"
+        "main":"main.ps",
+        "repo":"https://raw.githubusercontent.com/ThePigeonsBehindYou/PigeonScript/refs/heads/main/TerminalPS.sprite3"
     }
 }
